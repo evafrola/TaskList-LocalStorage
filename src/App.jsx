@@ -14,8 +14,8 @@ function App() {
 
   //Función para crear nuevas tareas
   function createTask(taskName) {
-    if (!tasksItems.find((task) => task.name === taskName)) {
-      if (taskName !== "" && taskName !== undefined && taskName !== null) {
+    if (!tasksItems.find((task) => task.name.toLowerCase() === taskName.toLowerCase())) {
+      if (taskName.toLowerCase() !== "" && taskName.toLowerCase !== undefined && taskName.toLowerCase !== null) {
         setTasksItems([...tasksItems, { name: taskName, done: false }]);
       } else {
         //Alerta por si los datos son erróneos
