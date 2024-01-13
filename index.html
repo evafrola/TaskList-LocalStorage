@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista en LocalStorage</title>
     <script type="module" crossorigin src="/TaskList-LocalStorage/assets/index-VDXdAeoY.js"></script>
-    <link rel="preload" as="style" crossorigin href="/TaskList-LocalStorage/assets/index-OD5BfKBs.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="/TaskList-LocalStorage/assets/index-OD5BfKBs.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/TaskList-LocalStorage/assets/index-OD5BfKBs.min.css"></noscript>
     <style>
       :root,[data-bs-theme=light] {
@@ -150,6 +150,112 @@ body {
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color)
+}
+
+.h2,h2 {
+    font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width: 1200px) {
+    .h2,h2 {
+        font-size:2rem
+    }
+}
+
+ol,ul {
+    padding-left: 2rem
+}
+
+dl,ol,ul {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+img,svg {
+    vertical-align: middle
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent
+}
+
+tbody,td,tfoot,th,thead,tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0
+}
+
+label {
+    display: inline-block
+}
+
+button {
+    border-radius: 0
+}
+
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+button,select {
+    text-transform: none
+}
+
+select {
+    word-wrap: normal
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem
+}
+
+.form-check .form-check-input {
+    float: left;
+    margin-left: -1.5em
+}
+
+.form-check-input {
+    --bs-form-check-bg: var(--bs-body-bg);
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-form-check-bg);
+    background-image: var(--bs-form-check-bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: .25em
 }
 
     </style>
