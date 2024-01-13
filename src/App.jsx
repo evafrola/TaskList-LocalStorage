@@ -75,23 +75,6 @@ function App() {
     let data = localStorage.getItem("tasks");
     if (data !== "[]") {
       setTasksItems(JSON.parse(data));
-    } else {
-      //Le avisa al usuario que no hay ninguna tarea y que debe de ingresar una
-      const alertDateEmpty = MySwal.mixin({
-        toast: true,
-        position: "top",
-        showConfirmButton: false,
-        timer: 1500,
-        timerProgressBar: true,
-        didOpen: (alertDateEmpty) => {
-          alertDateEmpty.onmouseenter = MySwal.stopTimer;
-          alertDateEmpty.onmouseleave = MySwal.resumeTimer;
-        },
-      });
-      alertDateEmpty.fire({
-        icon: "info",
-        title: "Lista vacía, ingresa una tarea",
-      });
     }
   }, []);
 

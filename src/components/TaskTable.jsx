@@ -1,5 +1,5 @@
 import { TaskRow } from "./TaskRow";
-//Muestra la tabla base y inyecta la otra tabla ocn los datos del arreglo
+//Muestra la tabla base y inyecta la otra tabla con los datos del arreglo
 export const TaskTable = ({ tasks, toggleTask, showCompleted = false }) => {
   const taskTableRows = (doneValue) => {
     return tasks
