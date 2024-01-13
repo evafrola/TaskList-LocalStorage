@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "../node_modules/bootstrap/scss/bootstrap.scss";
 import "../scss/custom.css";
 import "./index.css";
 
